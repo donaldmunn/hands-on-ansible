@@ -30,7 +30,7 @@ db_server: localhost
 # Database
 ####################################################
 # Postgres Version
-PG_VERSION: "9.3"
+PG_VERSION: "12"
 PG_HBA_CONF: /etc/postgresql/{{ PG_VERSION }}/main/pg_hba.conf
 PG_CONF: /etc/postgresql/{{ PG_VERSION }}/main/postgresql.conf
 
@@ -44,10 +44,9 @@ db_password: "your_mattermost_user_password"
 mattermost_sysuser: "mattermost"
 mattermost_directory: /home/{{ mattermost_sysuser }}/mattermost_app
 
-
 ####################################################
 # Web
 ####################################################
-LATEST_MM_VERSION: "3.5.0"
-LATEST_MM_DOWNLOADNAME: "mattermost-team-{{ LATEST_MM_VERSION }}-linux-amd64.tar.gz"
+LATEST_MM_VERSION: "5.32.1"
+LATEST_MM_DOWNLOADNAME: "mattermost-{{ LATEST_MM_VERSION }}-linux-amd64.tar.gz"
 LATEST_MM_URL: https://releases.mattermost.com/{{ LATEST_MM_VERSION }}/{{ LATEST_MM_DOWNLOADNAME }}
